@@ -1,4 +1,10 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --font1: Verdana, Geneva, Tahoma, San-serif;
+  --font2: "Montserrat", sans-serif;
+}
 
 * {
   margin: 0px;
@@ -9,31 +15,35 @@ html,
 body {
   min-height: 100vh;
   background-color: darkgray;
+  font-family: var(--font2);
 }
 
 header {
   background-color: black;
   color: white;
   text-align: center;
+  font-family: var(--font2);
+  font-size: 2vw;
 }
 
 header > h1 {
   padding-top: 50px;
-  font-variant: small-caps;
+  text-transform: uppercase;
 }
 
 header > p {
   padding-bottom: 50px;
-
 }
 
-header a, footer a {
+header a,
+footer a {
   color: white;
   text-decoration: none;
   font-weight: bolder;
 }
 
-header a:hover, footer a:hover {
+header a:hover,
+footer a:hover {
   text-decoration: underline;
 }
 
@@ -42,6 +52,8 @@ section {
   padding-bottom: 10vh;
   line-height: 2em;
   padding-left: 30px;
+  font-family: var(--font2);
+  font-size: 2vw;
 }
 
 section.normal {
@@ -62,6 +74,7 @@ section.imagem > p {
 footer {
   background-color: black;
   color: white;
-  text-align:  center;
+  text-align: center;
   padding: 10px;
+  font-family: var(--font2);
 }
